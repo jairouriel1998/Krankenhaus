@@ -75,3 +75,12 @@ CREATE TABLE RayosX(
   PRIMARY KEY (C_rayos),
   FOREIGN KEY (C_hospital) REFERENCES Hospital(C_hospital)
 );
+
+CREATE TABLE Salas(
+  C_sala VARCHAR(30),
+  C_hospital VARCHAR(30),
+  Sala TEXT,
+  Elemento TEXT,
+  PRIMARY KEY (C_sala),
+  FOREIGN KEY (C_hospital) REFERENCES Hospital(C_hospital)
+);

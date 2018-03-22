@@ -1,4 +1,4 @@
-CREATE DATABASE Krankenhaus_Database; /* CREANDO LA BASE DE DATOS */
+﻿CREATE DATABASE Krankenhaus_Database; /* CREANDO LA BASE DE DATOS */
 
 USE Krankenhaus_Database;  /* ABRIENDO LA BASE DE DATOS RECIEN CREADA */
 
@@ -84,3 +84,5 @@ CREATE TABLE Salas(
   PRIMARY KEY (C_sala),
   FOREIGN KEY (C_hospital) REFERENCES Hospital(C_hospital)
 );
+
+/* Fin de las tablas*/

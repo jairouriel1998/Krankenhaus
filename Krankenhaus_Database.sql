@@ -1,6 +1,9 @@
-﻿CREATE DATABASE Krankenhaus_Database; /* CREANDO LA BASE DE DATOS */
+﻿CREATE DATABASE Krankenhaus_Database; 
 
-USE Krankenhaus_Database;  /* ABRIENDO LA BASE DE DATOS RECIEN CREADA */
+/* CREANDO LA BASE DE DATOS */
+
+USE Krankenhaus_Database; 
+ //* ABRIENDO LA BASE DE DATOS RECIEN CREADA */
 
 /* CREANDO LAS TABLAS QUE SE USARÁN */
 CREATE TABLE Hospital(
@@ -48,7 +51,7 @@ CREATE TABLE Farmacia(
   Medicamento TEXT,
   Cantidad TEXT,
   PRIMARY KEY (C_farmacia),
-  FOREIGN KEY C_hospital REFERENCES Hospital(C_hospital)
+  FOREIGN KEY (C_hospital) REFERENCES Hospital(C_hospital)
 );
 
 CREATE TABLE Laboratorio(
@@ -56,7 +59,7 @@ CREATE TABLE Laboratorio(
   C_hospital VARCHAR(30),
   TipoExamen TEXT,
   PRIMARY KEY (C_laboratorio),
-  FOREIGN KEY C_hospital REFERENCES Hospital(C_hospital)
+  FOREIGN KEY (C_hospital) REFERENCES Hospital(C_hospital)
 );
 
 CREATE TABLE Morgue(

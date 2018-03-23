@@ -1,3 +1,4 @@
+
 #-------------------------------------------------
 #
 # Project created by QtCreator 2018-03-22T22:02:51
@@ -11,6 +12,10 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = Krankenhaus
 TEMPLATE = app
 
+LIBS        += -lGL
+LIBS        += -L/usr/local/lib -L/usr/lib -lmysqlcppconn
+INCLUDEPATH += -I/usr/include -I/usr/local/include
+               -I/usr/local/include/cppconn
 
 SOURCES += main.cpp\
         krankenhaus.cpp \

@@ -74,9 +74,8 @@
 	border-radius: 20px;
 }
 
-#ir_pacientes :hover{
+#ir_pacientes:hover{
 	background-color: rgba(160, 0, 100, 0.8);
-	cursor: pointer;
 }</string>
     </property>
     <property name="text">

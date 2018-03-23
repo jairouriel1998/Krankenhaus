@@ -59,9 +59,8 @@ public:
 "	border-radius: 20px;\n"
 "}\n"
 "\n"
-"#ir_pacientes :hover{\n"
+"#ir_pacientes:hover{\n"
 "	background-color: rgba(160, 0, 100, 0.8);\n"
-"	cursor: pointer;\n"
 "}"));
         Krankenhaus->setCentralWidget(centralWidget);
 

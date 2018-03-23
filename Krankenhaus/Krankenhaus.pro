@@ -13,8 +13,31 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        krankenhaus.cpp
+        krankenhaus.cpp \
+    people.cpp
 
-HEADERS  += krankenhaus.h
+HEADERS  += krankenhaus.h \
+    Clases/Administrativos.h \
+    Clases/Capsula.h \
+    Clases/Empleados.h \
+    Clases/Enfermeras.h \
+    Clases/Farmacia.h \
+    Clases/Hospital.h \
+    Clases/inyectable.h \
+    Clases/Jarabe.h \
+    Clases/Laboratorio.h \
+    Clases/Maternidad.h \
+    Clases/Medico.h \
+    Clases/Morgue.h \
+    Clases/Pacientes.h \
+    Clases/Pediatria.h \
+    Clases/Personas.h \
+    Clases/Psiquiatria.h \
+    Clases/Quirofano.h \
+    Clases/RayosX.h \
+    Clases/Salas.h \
+    Clases/ServiciosGenerales.h \
+    people.h
 
-FORMS    += krankenhaus.ui
+FORMS    += krankenhaus.ui \
+    people.ui

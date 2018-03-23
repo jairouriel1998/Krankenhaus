@@ -14,10 +14,9 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
-#include <QtWidgets/QStatusBar>
-#include <QtWidgets/QToolBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -25,28 +24,46 @@ QT_BEGIN_NAMESPACE
 class Ui_Krankenhaus
 {
 public:
-    QMenuBar *menuBar;
-    QToolBar *mainToolBar;
     QWidget *centralWidget;
-    QStatusBar *statusBar;
+    QLabel *label;
+    QLabel *label_2;
+    QPushButton *ir_pacientes;
 
     void setupUi(QMainWindow *Krankenhaus)
     {
         if (Krankenhaus->objectName().isEmpty())
             Krankenhaus->setObjectName(QStringLiteral("Krankenhaus"));
-        Krankenhaus->resize(400, 300);
-        menuBar = new QMenuBar(Krankenhaus);
-        menuBar->setObjectName(QStringLiteral("menuBar"));
-        Krankenhaus->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(Krankenhaus);
-        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
-        Krankenhaus->addToolBar(mainToolBar);
+        Krankenhaus->setWindowModality(Qt::WindowModal);
+        Krankenhaus->resize(901, 511);
         centralWidget = new QWidget(Krankenhaus);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
+        label = new QLabel(centralWidget);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(0, 0, 901, 511));
+        label->setPixmap(QPixmap(QString::fromUtf8("../imagenes/ltmWANZ.png")));
+        label->setScaledContents(true);
+        label_2 = new QLabel(centralWidget);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(30, 20, 511, 51));
+        label_2->setStyleSheet(QLatin1String("#label_2{\n"
+"	font-size: 60px;\n"
+"	color: purple;\n"
+"}"));
+        ir_pacientes = new QPushButton(centralWidget);
+        ir_pacientes->setObjectName(QStringLiteral("ir_pacientes"));
+        ir_pacientes->setGeometry(QRect(30, 150, 191, 61));
+        ir_pacientes->setCursor(QCursor(Qt::PointingHandCursor));
+        ir_pacientes->setStyleSheet(QLatin1String("#ir_pacientes{\n"
+"	background-color: rgba(160, 0, 100, 0.2);\n"
+"	font: bold 25px;\n"
+"	border-radius: 20px;\n"
+"}\n"
+"\n"
+"#ir_pacientes :hover{\n"
+"	background-color: rgba(160, 0, 100, 0.8);\n"
+"	cursor: pointer;\n"
+"}"));
         Krankenhaus->setCentralWidget(centralWidget);
-        statusBar = new QStatusBar(Krankenhaus);
-        statusBar->setObjectName(QStringLiteral("statusBar"));
-        Krankenhaus->setStatusBar(statusBar);
 
         retranslateUi(Krankenhaus);
 
@@ -56,6 +73,9 @@ public:
     void retranslateUi(QMainWindow *Krankenhaus)
     {
         Krankenhaus->setWindowTitle(QApplication::translate("Krankenhaus", "Krankenhaus", 0));
+        label->setText(QString());
+        label_2->setText(QApplication::translate("Krankenhaus", "KRANKENHAUS", 0));
+        ir_pacientes->setText(QApplication::translate("Krankenhaus", "Pacientes", 0));
     } // retranslateUi
 
 };

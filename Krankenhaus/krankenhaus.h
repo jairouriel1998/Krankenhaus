@@ -15,6 +15,9 @@ public:
     explicit Krankenhaus(QWidget *parent = 0);
     ~Krankenhaus();
 
+private slots:
+    void on_ir_pacientes_clicked();
+
 private:
     Ui::Krankenhaus *ui;
 };

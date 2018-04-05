@@ -19,7 +19,8 @@ INCLUDEPATH += -I/usr/include -I/usr/local/include
 
 SOURCES += main.cpp\
         krankenhaus.cpp \
-    people.cpp
+    people.cpp \
+    controller.cpp
 
 HEADERS  += krankenhaus.h \
     Clases/Administrativos.h \
@@ -42,7 +43,8 @@ HEADERS  += krankenhaus.h \
     Clases/RayosX.h \
     Clases/Salas.h \
     Clases/ServiciosGenerales.h \
-    people.h
+    people.h \
+    controller.h
 
 FORMS    += krankenhaus.ui \
     people.ui

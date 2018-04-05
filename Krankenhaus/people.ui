@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>911</width>
-    <height>581</height>
+    <height>647</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,7 +22,7 @@
      <x>0</x>
      <y>0</y>
      <width>911</width>
-     <height>581</height>
+     <height>651</height>
     </rect>
    </property>
    <property name="frameShadow">
@@ -47,6 +47,14 @@
      <height>71</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">#label_2{
 	font-size: 50px;
@@ -64,7 +72,7 @@
      <x>40</x>
      <y>80</y>
      <width>841</width>
-     <height>481</height>
+     <height>521</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -645,7 +653,7 @@
     <property name="geometry">
      <rect>
       <x>700</x>
-      <y>430</y>
+      <y>470</y>
       <width>121</width>
       <height>31</height>
      </rect>
@@ -673,7 +681,7 @@
     <property name="geometry">
      <rect>
       <x>440</x>
-      <y>390</y>
+      <y>430</y>
       <width>121</width>
       <height>31</height>
      </rect>
@@ -701,7 +709,7 @@
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>390</y>
+      <y>430</y>
       <width>121</width>
       <height>31</height>
      </rect>
@@ -729,7 +737,7 @@
     <property name="geometry">
      <rect>
       <x>700</x>
-      <y>390</y>
+      <y>430</y>
       <width>121</width>
       <height>31</height>
      </rect>
@@ -757,7 +765,7 @@
     <property name="geometry">
      <rect>
       <x>440</x>
-      <y>430</y>
+      <y>470</y>
       <width>121</width>
       <height>31</height>
      </rect>
@@ -785,7 +793,7 @@
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>430</y>
+      <y>470</y>
       <width>121</width>
       <height>31</height>
      </rect>

@@ -4,15 +4,11 @@
 #include "krankenhaus.h"
 #include "ui_krankenhaus.h"
 
-People::People(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::People)
-{
+People::People(QWidget *parent) : QWidget(parent), ui(new Ui::People){
     ui->setupUi(this);
 }
 
-People::~People()
-{
+People::~People(){
     delete ui;
 }
 

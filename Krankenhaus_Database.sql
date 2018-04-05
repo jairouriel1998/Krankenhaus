@@ -88,4 +88,20 @@ CREATE TABLE Salas(
   FOREIGN KEY (C_hospital) REFERENCES Hospital(C_hospital)
 );
 
-/* Fin de las tablas*/
+/* Lllenando base de datos*/
+
+INSERT INTO Hospital(C_hospital) VALUES ("H001");
+
+INSERT INTO Personas(C_persona, C_hospital, Nombres, Apellidos, Edad, Sexo, Telefono, Direccion) VALUES ("P001","H001","Joel ELiseo", "Martinez Lanza",23,"Masculino","45154568","Col. Loarque");
+
+INSERT INTO Personas(C_persona, C_hospital, Nombres, Apellidos, Edad, Sexo, Telefono, Direccion) VALUES ("P002","H001","Gabriel Lopez", "Sanches Carbajal",33,"Masculino","99207110","Res. El Sauce");
+
+INSERT INTO Personas(C_persona, C_hospital, Nombres, Apellidos, Edad, Sexo, Telefono, Direccion) VALUES ("P003","H001","Mario Joel", "Urbina Casco",21,"Femenino","98452132","Col. Alamo");
+
+
+INSERT INTO Paciente(C_persona, N_cama, Historial, Fecha_ingreso, Familiar, Sala, Medicamento, Medico) VALUES("P001", 3, "Operado del higado","15_mar_2018","Andrez Martines","Quirofano","Paracetamol","D. Solorsano.");
+
+INSERT INTO Paciente(C_persona, N_cama, Historial, Fecha_ingreso, Familiar, Sala, Medicamento, Medico) VALUES("P002", 5, "Ninguno","13_ene_2018","Luis Lopez","Urgencias","Panadol","Dr. Carranza.");
+
+INSERT INTO Paciente(C_persona, N_cama, Historial, Fecha_ingreso, Familiar, Sala, Medicamento, Medico) VALUES("P003", 7, "Operado del higado, corazon y pulmon","12_dic_2017","Carlos Lopez","Quirofano","Paracetamol","D. Solorsano.");
+

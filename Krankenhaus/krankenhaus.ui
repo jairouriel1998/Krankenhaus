@@ -207,7 +207,7 @@
 }</string>
     </property>
     <property name="text">
-     <string>Farmacia</string>
+     <string>Salas</string>
     </property>
    </widget>
    <widget class="QPushButton" name="salir">

@@ -66,16 +66,21 @@ public:
         if (People->objectName().isEmpty())
             People->setObjectName(QStringLiteral("People"));
         People->setWindowModality(Qt::WindowModal);
-        People->resize(911, 581);
+        People->resize(911, 647);
         label = new QLabel(People);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(0, 0, 911, 581));
+        label->setGeometry(QRect(0, 0, 911, 651));
         label->setFrameShadow(QFrame::Raised);
         label->setPixmap(QPixmap(QString::fromUtf8("../imagenes/39918066-minimal-wallpapers.jpg")));
         label->setScaledContents(true);
         label_2 = new QLabel(People);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setGeometry(QRect(40, 10, 301, 71));
+        QFont font;
+        font.setBold(true);
+        font.setItalic(false);
+        font.setWeight(75);
+        label_2->setFont(font);
         label_2->setStyleSheet(QLatin1String("#label_2{\n"
 "	font-size: 50px;\n"
 "	color: skyblue;\n"
@@ -83,7 +88,7 @@ public:
 "}"));
         panel = new QFrame(People);
         panel->setObjectName(QStringLiteral("panel"));
-        panel->setGeometry(QRect(40, 80, 841, 481));
+        panel->setGeometry(QRect(40, 80, 841, 521));
         panel->setStyleSheet(QLatin1String("#panel{\n"
 "	background-color: rgba(0,0,0,0.5);\n"
 "   border-radius: 25px;\n"
@@ -93,59 +98,59 @@ public:
         label_3 = new QLabel(panel);
         label_3->setObjectName(QStringLiteral("label_3"));
         label_3->setGeometry(QRect(10, 10, 211, 31));
-        QFont font;
-        font.setPointSize(14);
-        font.setBold(true);
-        font.setWeight(75);
-        label_3->setFont(font);
+        QFont font1;
+        font1.setPointSize(14);
+        font1.setBold(true);
+        font1.setWeight(75);
+        label_3->setFont(font1);
         label_4 = new QLabel(panel);
         label_4->setObjectName(QStringLiteral("label_4"));
         label_4->setGeometry(QRect(10, 70, 211, 31));
-        label_4->setFont(font);
+        label_4->setFont(font1);
         label_5 = new QLabel(panel);
         label_5->setObjectName(QStringLiteral("label_5"));
         label_5->setGeometry(QRect(10, 130, 211, 31));
-        label_5->setFont(font);
+        label_5->setFont(font1);
         label_6 = new QLabel(panel);
         label_6->setObjectName(QStringLiteral("label_6"));
         label_6->setGeometry(QRect(10, 190, 211, 31));
-        label_6->setFont(font);
+        label_6->setFont(font1);
         label_7 = new QLabel(panel);
         label_7->setObjectName(QStringLiteral("label_7"));
         label_7->setGeometry(QRect(10, 250, 211, 31));
-        label_7->setFont(font);
+        label_7->setFont(font1);
         label_8 = new QLabel(panel);
         label_8->setObjectName(QStringLiteral("label_8"));
         label_8->setGeometry(QRect(10, 310, 211, 31));
-        label_8->setFont(font);
+        label_8->setFont(font1);
         label_9 = new QLabel(panel);
         label_9->setObjectName(QStringLiteral("label_9"));
         label_9->setGeometry(QRect(10, 370, 211, 31));
-        label_9->setFont(font);
+        label_9->setFont(font1);
         label_10 = new QLabel(panel);
         label_10->setObjectName(QStringLiteral("label_10"));
         label_10->setGeometry(QRect(460, 10, 211, 31));
-        label_10->setFont(font);
+        label_10->setFont(font1);
         label_11 = new QLabel(panel);
         label_11->setObjectName(QStringLiteral("label_11"));
         label_11->setGeometry(QRect(460, 70, 211, 31));
-        label_11->setFont(font);
+        label_11->setFont(font1);
         label_12 = new QLabel(panel);
         label_12->setObjectName(QStringLiteral("label_12"));
         label_12->setGeometry(QRect(460, 130, 211, 31));
-        label_12->setFont(font);
+        label_12->setFont(font1);
         label_13 = new QLabel(panel);
         label_13->setObjectName(QStringLiteral("label_13"));
         label_13->setGeometry(QRect(460, 190, 211, 31));
-        label_13->setFont(font);
+        label_13->setFont(font1);
         label_14 = new QLabel(panel);
         label_14->setObjectName(QStringLiteral("label_14"));
         label_14->setGeometry(QRect(460, 250, 211, 31));
-        label_14->setFont(font);
+        label_14->setFont(font1);
         label_15 = new QLabel(panel);
         label_15->setObjectName(QStringLiteral("label_15"));
         label_15->setGeometry(QRect(460, 310, 211, 31));
-        label_15->setFont(font);
+        label_15->setFont(font1);
         nombres = new QLineEdit(panel);
         nombres->setObjectName(QStringLiteral("nombres"));
         nombres->setGeometry(QRect(30, 40, 341, 27));
@@ -279,7 +284,7 @@ public:
         medico->setReadOnly(true);
         regresar = new QPushButton(panel);
         regresar->setObjectName(QStringLiteral("regresar"));
-        regresar->setGeometry(QRect(700, 430, 121, 31));
+        regresar->setGeometry(QRect(700, 470, 121, 31));
         regresar->setCursor(QCursor(Qt::PointingHandCursor));
         regresar->setStyleSheet(QLatin1String("#regresar{\n"
 "	background-color: rgba(100,100,200,0.4);\n"
@@ -293,7 +298,7 @@ public:
 "}"));
         anterior = new QPushButton(panel);
         anterior->setObjectName(QStringLiteral("anterior"));
-        anterior->setGeometry(QRect(440, 390, 121, 31));
+        anterior->setGeometry(QRect(440, 430, 121, 31));
         anterior->setCursor(QCursor(Qt::PointingHandCursor));
         anterior->setStyleSheet(QLatin1String("#anterior{\n"
 "	background-color: rgba(100,100,200,0.4);\n"
@@ -307,7 +312,7 @@ public:
 "}"));
         siguiente = new QPushButton(panel);
         siguiente->setObjectName(QStringLiteral("siguiente"));
-        siguiente->setGeometry(QRect(570, 390, 121, 31));
+        siguiente->setGeometry(QRect(570, 430, 121, 31));
         siguiente->setCursor(QCursor(Qt::PointingHandCursor));
         siguiente->setStyleSheet(QLatin1String("#siguiente{\n"
 "	background-color: rgba(100,100,200,0.4);\n"
@@ -321,7 +326,7 @@ public:
 "}"));
         editar = new QPushButton(panel);
         editar->setObjectName(QStringLiteral("editar"));
-        editar->setGeometry(QRect(700, 390, 121, 31));
+        editar->setGeometry(QRect(700, 430, 121, 31));
         editar->setCursor(QCursor(Qt::PointingHandCursor));
         editar->setStyleSheet(QLatin1String("#editar{\n"
 "	background-color: rgba(100,100,200,0.4);\n"
@@ -335,7 +340,7 @@ public:
 "}"));
         nuevo = new QPushButton(panel);
         nuevo->setObjectName(QStringLiteral("nuevo"));
-        nuevo->setGeometry(QRect(440, 430, 121, 31));
+        nuevo->setGeometry(QRect(440, 470, 121, 31));
         nuevo->setCursor(QCursor(Qt::PointingHandCursor));
         nuevo->setStyleSheet(QLatin1String("#nuevo{\n"
 "	background-color: rgba(100,100,200,0.4);\n"
@@ -349,7 +354,7 @@ public:
 "}"));
         eliminar = new QPushButton(panel);
         eliminar->setObjectName(QStringLiteral("eliminar"));
-        eliminar->setGeometry(QRect(570, 430, 121, 31));
+        eliminar->setGeometry(QRect(570, 470, 121, 31));
         eliminar->setCursor(QCursor(Qt::PointingHandCursor));
         eliminar->setStyleSheet(QLatin1String("#eliminar{\n"
 "	background-color: rgba(100,100,200,0.4);\n"

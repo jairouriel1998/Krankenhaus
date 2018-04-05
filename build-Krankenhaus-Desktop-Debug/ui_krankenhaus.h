@@ -151,7 +151,7 @@ public:
         ir_pacientes->setText(QApplication::translate("Krankenhaus", "Pacientes", 0));
         ir_empleados->setText(QApplication::translate("Krankenhaus", "Empleados", 0));
         ir_farmacia->setText(QApplication::translate("Krankenhaus", "Farmacia", 0));
-        ir_salas->setText(QApplication::translate("Krankenhaus", "Farmacia", 0));
+        ir_salas->setText(QApplication::translate("Krankenhaus", "Salas", 0));
         salir->setText(QApplication::translate("Krankenhaus", "Salir", 0));
     } // retranslateUi
 

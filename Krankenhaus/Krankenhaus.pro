@@ -20,7 +20,10 @@ INCLUDEPATH += -I/usr/include -I/usr/local/include
 SOURCES += main.cpp\
         krankenhaus.cpp \
     people.cpp \
-    controller.cpp
+    controller.cpp \
+    empleado.cpp \
+    salas.cpp \
+    farmacia.cpp
 
 HEADERS  += krankenhaus.h \
     Clases/Administrativos.h \
@@ -44,7 +47,13 @@ HEADERS  += krankenhaus.h \
     Clases/Salas.h \
     Clases/ServiciosGenerales.h \
     people.h \
-    controller.h
+    controller.h \
+    empleado.h \
+    salas.h \
+    farmacia.h
 
 FORMS    += krankenhaus.ui \
-    people.ui
+    people.ui \
+    empleado.ui \
+    salas.ui \
+    farmacia.ui

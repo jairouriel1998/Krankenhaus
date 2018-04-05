@@ -105,7 +105,7 @@
    <widget class="QPushButton" name="ir_empleados">
     <property name="geometry">
      <rect>
-      <x>650</x>
+      <x>670</x>
       <y>150</y>
       <width>191</width>
       <height>61</height>
@@ -177,7 +177,7 @@
    <widget class="QPushButton" name="ir_salas">
     <property name="geometry">
      <rect>
-      <x>650</x>
+      <x>670</x>
       <y>270</y>
       <width>191</width>
       <height>61</height>

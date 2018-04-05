@@ -78,7 +78,7 @@ public:
 "}"));
         ir_empleados = new QPushButton(centralWidget);
         ir_empleados->setObjectName(QStringLiteral("ir_empleados"));
-        ir_empleados->setGeometry(QRect(650, 150, 191, 61));
+        ir_empleados->setGeometry(QRect(670, 150, 191, 61));
         ir_empleados->setFont(font1);
         ir_empleados->setCursor(QCursor(Qt::PointingHandCursor));
         ir_empleados->setStyleSheet(QLatin1String("#ir_empleados{\n"
@@ -108,7 +108,7 @@ public:
 "}"));
         ir_salas = new QPushButton(centralWidget);
         ir_salas->setObjectName(QStringLiteral("ir_salas"));
-        ir_salas->setGeometry(QRect(650, 270, 191, 61));
+        ir_salas->setGeometry(QRect(670, 270, 191, 61));
         ir_salas->setFont(font1);
         ir_salas->setCursor(QCursor(Qt::PointingHandCursor));
         ir_salas->setStyleSheet(QLatin1String("#ir_salas{\n"

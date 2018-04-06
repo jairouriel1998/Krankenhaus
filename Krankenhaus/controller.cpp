@@ -46,6 +46,12 @@ QList <pacientes> controller::getPacientes(){
     return lista;
 }
 
+
+
+void controller::closeConnection(){
+    connection->close();
+}
+
 controller::~controller(){
     delete connection;
     //borrar driver

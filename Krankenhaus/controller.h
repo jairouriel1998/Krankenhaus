@@ -23,9 +23,6 @@ public:
     controller();
     ~controller();
     QList<pacientes> getPacientes();
-    int agregarPaciente(pacientes&);
-    int actualizarPaciente(pacientes&);
-    int eliminarPaciente(int);
     void closeConnection();
 };
 

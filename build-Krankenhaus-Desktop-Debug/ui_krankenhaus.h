@@ -52,8 +52,8 @@ public:
         QFont font;
         label_2->setFont(font);
         label_2->setStyleSheet(QLatin1String("#label_2{\n"
-"	font-size: 60px;\n"
-"	color: purple;\n"
+"	font-size: 72px;\n"
+"	color:white;\n"
 "}"));
         label_2->setAlignment(Qt::AlignCenter);
         ir_pacientes = new QPushButton(centralWidget);

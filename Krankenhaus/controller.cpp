@@ -7,7 +7,7 @@ controller::controller(){
             connection->setAutoCommit(0);
             connection->setSchema("Krankenhaus_database");
         }catch(SQLException &ex){
-            cout<<"Error, no se puede connectar a la base de datos" <<ex.getErrorCode() << endl;
+            cout<<"Error, no se puede connectar a la base de datos" <<ex.getErrorCode();
         }
 }
 

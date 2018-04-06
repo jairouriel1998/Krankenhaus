@@ -52,8 +52,8 @@
     </property>
     <property name="styleSheet">
      <string notr="true">#label_2{
-	font-size: 60px;
-	color: purple;
+	font-size: 72px;
+	color:white;
 }</string>
     </property>
     <property name="text">

@@ -53,6 +53,7 @@ public:
     {
         if (Empleado->objectName().isEmpty())
             Empleado->setObjectName(QStringLiteral("Empleado"));
+        Empleado->setWindowModality(Qt::WindowModal);
         Empleado->resize(890, 612);
         label = new QLabel(Empleado);
         label->setObjectName(QStringLiteral("label"));
@@ -269,9 +270,6 @@ public:
 "	background-color: rgba(100,100,200,0.8);\n"
 "   cursor: pointer;\n"
 "}"));
-        label->raise();
-        label_2->raise();
-        panel->raise();
 
         retranslateUi(Empleado);
 

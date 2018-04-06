@@ -15,6 +15,9 @@ public:
     explicit Farmacia(QWidget *parent = 0);
     ~Farmacia();
 
+private slots:
+    void on_regresar_clicked();
+
 private:
     Ui::Farmacia *ui;
 };

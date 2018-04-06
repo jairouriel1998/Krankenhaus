@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>Empleado</class>
  <widget class="QWidget" name="Empleado">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -555,10 +558,6 @@
     </property>
    </widget>
   </widget>
-  <zorder>label</zorder>
-  <zorder>label_2</zorder>
-  <zorder>panel</zorder>
-  <zorder>panel_2</zorder>
  </widget>
  <resources/>
  <connections/>

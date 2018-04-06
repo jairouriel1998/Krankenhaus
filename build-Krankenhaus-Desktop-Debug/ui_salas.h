@@ -43,6 +43,7 @@ public:
     {
         if (salas->objectName().isEmpty())
             salas->setObjectName(QStringLiteral("salas"));
+        salas->setWindowModality(Qt::WindowModal);
         salas->resize(895, 436);
         label = new QLabel(salas);
         label->setObjectName(QStringLiteral("label"));

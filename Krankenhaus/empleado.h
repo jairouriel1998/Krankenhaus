@@ -15,6 +15,9 @@ public:
     explicit Empleado(QWidget *parent = 0);
     ~Empleado();
 
+private slots:
+    void on_regresar_4_clicked();
+
 private:
     Ui::Empleado *ui;
 };

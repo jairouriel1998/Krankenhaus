@@ -20,6 +20,12 @@ private slots:
 
     void on_salir_clicked();
 
+    void on_ir_empleados_clicked();
+
+    void on_ir_farmacia_clicked();
+
+    void on_ir_salas_clicked();
+
 private:
     Ui::Krankenhaus *ui;
 };

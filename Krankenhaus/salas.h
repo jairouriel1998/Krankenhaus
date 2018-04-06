@@ -15,6 +15,10 @@ public:
     explicit salas(QWidget *parent = 0);
     ~salas();
 
+private slots:
+
+    void on_regresar_clicked();
+
 private:
     Ui::salas *ui;
 };

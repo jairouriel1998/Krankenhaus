@@ -45,6 +45,7 @@ public:
     {
         if (Farmacia->objectName().isEmpty())
             Farmacia->setObjectName(QStringLiteral("Farmacia"));
+        Farmacia->setWindowModality(Qt::WindowModal);
         Farmacia->resize(903, 430);
         label = new QLabel(Farmacia);
         label->setObjectName(QStringLiteral("label"));

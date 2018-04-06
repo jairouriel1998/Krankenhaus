@@ -1,4 +1,23 @@
-﻿CREATE DATABASE Krankenhaus_Database; 
+﻿/*Qt Creator se descargar en el centro de software de Ubuntu*/
+
+/*Para instalar MySQL en Ubuntu solo necesitas conexion a internet y ejecutar el siguiente comando en la terminal*/
+
+sudo apt-get mysql-server mysql-client
+
+/*Para mejorar el uso de MySQL solo necesitas correr en la terminal*/
+sudo apt-get mysql-workbench
+
+/*Para descargar el conector MySQL-C++ solo necesitas conexion a internet y correr el siguiente comando en la terminal */
+sudo apt-get install libmysqlcppconn-dev
+
+
+/*para windows de descarga el instalador*/
+
+
+
+/*Base de datos para el programa*/
+
+CREATE DATABASE Krankenhaus_Database; 
 
 /* CREANDO LA BASE DE DATOS */
 

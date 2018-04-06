@@ -18,6 +18,8 @@ public:
 private slots:
     void on_ir_pacientes_clicked();
 
+    void on_salir_clicked();
+
 private:
     Ui::Krankenhaus *ui;
 };

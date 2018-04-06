@@ -8,10 +8,11 @@
 #include <cppconn/driver.h>
 #include <cppconn/exception.h>
 #include <cppconn/resultset.h>
-#include "Clases/Pacientes.h"
+#include "pacientes.h"
 
 using namespace sql;
-
+using std::cout;
+using std::endl;
 
 class controller{
 private:
@@ -21,7 +22,10 @@ private:
 public:
     controller();
     ~controller();
-    QList<Pacientes> getPacientess();
+    QList<pacientes> getPacientes();
+    int agregarPaciente(pacientes&);
+    int actualizarPaciente(pacientes&);
+    int eliminarPaciente(int);
     void closeConnection();
 };
 

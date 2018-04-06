@@ -153,6 +153,7 @@ public:
         label_15->setFont(font1);
         nombres = new QLineEdit(panel);
         nombres->setObjectName(QStringLiteral("nombres"));
+        nombres->setEnabled(true);
         nombres->setGeometry(QRect(30, 40, 341, 27));
         nombres->setStyleSheet(QLatin1String("#nombres{\n"
 "	background-color: rgba(100,100,200,0.4);\n"
@@ -160,7 +161,7 @@ public:
 "   border-radius: 10px;\n"
 "}"));
         nombres->setAlignment(Qt::AlignCenter);
-        nombres->setReadOnly(true);
+        nombres->setReadOnly(false);
         apellidos = new QLineEdit(panel);
         apellidos->setObjectName(QStringLiteral("apellidos"));
         apellidos->setGeometry(QRect(30, 100, 341, 27));
@@ -171,7 +172,7 @@ public:
 "}"));
         apellidos->setCursorPosition(0);
         apellidos->setAlignment(Qt::AlignCenter);
-        apellidos->setReadOnly(true);
+        apellidos->setReadOnly(false);
         edad = new QLineEdit(panel);
         edad->setObjectName(QStringLiteral("edad"));
         edad->setGeometry(QRect(30, 160, 341, 27));
@@ -181,7 +182,7 @@ public:
 "   border-radius: 10px;\n"
 "}"));
         edad->setAlignment(Qt::AlignCenter);
-        edad->setReadOnly(true);
+        edad->setReadOnly(false);
         sexo = new QLineEdit(panel);
         sexo->setObjectName(QStringLiteral("sexo"));
         sexo->setGeometry(QRect(30, 220, 341, 27));
@@ -191,7 +192,7 @@ public:
 "   border-radius: 10px;\n"
 "}"));
         sexo->setAlignment(Qt::AlignCenter);
-        sexo->setReadOnly(true);
+        sexo->setReadOnly(false);
         telefono = new QLineEdit(panel);
         telefono->setObjectName(QStringLiteral("telefono"));
         telefono->setGeometry(QRect(30, 280, 341, 27));
@@ -201,7 +202,7 @@ public:
 "   border-radius: 10px;\n"
 "}"));
         telefono->setAlignment(Qt::AlignCenter);
-        telefono->setReadOnly(true);
+        telefono->setReadOnly(false);
         direccion = new QLineEdit(panel);
         direccion->setObjectName(QStringLiteral("direccion"));
         direccion->setGeometry(QRect(30, 340, 341, 27));
@@ -211,7 +212,7 @@ public:
 "   border-radius: 10px;\n"
 "}"));
         direccion->setAlignment(Qt::AlignCenter);
-        direccion->setReadOnly(true);
+        direccion->setReadOnly(false);
         cama = new QLineEdit(panel);
         cama->setObjectName(QStringLiteral("cama"));
         cama->setGeometry(QRect(30, 400, 341, 27));
@@ -221,7 +222,7 @@ public:
 "   border-radius: 10px;\n"
 "}"));
         cama->setAlignment(Qt::AlignCenter);
-        cama->setReadOnly(true);
+        cama->setReadOnly(false);
         historial = new QLineEdit(panel);
         historial->setObjectName(QStringLiteral("historial"));
         historial->setGeometry(QRect(480, 40, 341, 27));
@@ -231,7 +232,7 @@ public:
 "   border-radius: 10px;\n"
 "}"));
         historial->setAlignment(Qt::AlignCenter);
-        historial->setReadOnly(true);
+        historial->setReadOnly(false);
         ingreso = new QLineEdit(panel);
         ingreso->setObjectName(QStringLiteral("ingreso"));
         ingreso->setGeometry(QRect(480, 100, 341, 27));
@@ -241,7 +242,7 @@ public:
 "   border-radius: 10px;\n"
 "}"));
         ingreso->setAlignment(Qt::AlignCenter);
-        ingreso->setReadOnly(true);
+        ingreso->setReadOnly(false);
         familiar = new QLineEdit(panel);
         familiar->setObjectName(QStringLiteral("familiar"));
         familiar->setGeometry(QRect(480, 160, 341, 27));
@@ -251,7 +252,7 @@ public:
 "   border-radius: 10px;\n"
 "}"));
         familiar->setAlignment(Qt::AlignCenter);
-        familiar->setReadOnly(true);
+        familiar->setReadOnly(false);
         sala = new QLineEdit(panel);
         sala->setObjectName(QStringLiteral("sala"));
         sala->setGeometry(QRect(480, 220, 341, 27));
@@ -261,7 +262,7 @@ public:
 "   border-radius: 10px;\n"
 "}"));
         sala->setAlignment(Qt::AlignCenter);
-        sala->setReadOnly(true);
+        sala->setReadOnly(false);
         medicamento = new QLineEdit(panel);
         medicamento->setObjectName(QStringLiteral("medicamento"));
         medicamento->setGeometry(QRect(480, 280, 341, 27));
@@ -271,7 +272,7 @@ public:
 "   border-radius: 10px;\n"
 "}"));
         medicamento->setAlignment(Qt::AlignCenter);
-        medicamento->setReadOnly(true);
+        medicamento->setReadOnly(false);
         medico = new QLineEdit(panel);
         medico->setObjectName(QStringLiteral("medico"));
         medico->setGeometry(QRect(480, 340, 341, 27));
@@ -281,7 +282,7 @@ public:
 "   border-radius: 10px;\n"
 "}"));
         medico->setAlignment(Qt::AlignCenter);
-        medico->setReadOnly(true);
+        medico->setReadOnly(false);
         regresar = new QPushButton(panel);
         regresar->setObjectName(QStringLiteral("regresar"));
         regresar->setGeometry(QRect(700, 470, 121, 31));

@@ -20,3 +20,7 @@ void Krankenhaus::on_ir_pacientes_clicked(){
     paciente->show();
     this->close();
 }
+
+void Krankenhaus::on_salir_clicked(){
+    exit(0);
+}

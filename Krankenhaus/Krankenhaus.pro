@@ -23,7 +23,8 @@ SOURCES += main.cpp\
     controller.cpp \
     empleado.cpp \
     salas.cpp \
-    farmacia.cpp
+    farmacia.cpp \
+    pacientes.cpp
 
 HEADERS  += krankenhaus.h \
     Clases/Administrativos.h \
@@ -50,7 +51,8 @@ HEADERS  += krankenhaus.h \
     controller.h \
     empleado.h \
     salas.h \
-    farmacia.h
+    farmacia.h \
+    pacientes.h
 
 FORMS    += krankenhaus.ui \
     people.ui \

@@ -348,6 +348,9 @@
     </property>
    </widget>
    <widget class="QLineEdit" name="nombres">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -367,7 +370,7 @@
      <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="apellidos">
@@ -393,7 +396,7 @@
      <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="edad">
@@ -416,7 +419,7 @@
      <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="sexo">
@@ -439,7 +442,7 @@
      <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="telefono">
@@ -462,7 +465,7 @@
      <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="direccion">
@@ -485,7 +488,7 @@
      <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="cama">
@@ -508,7 +511,7 @@
      <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="historial">
@@ -531,7 +534,7 @@
      <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="ingreso">
@@ -554,7 +557,7 @@
      <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="familiar">
@@ -577,7 +580,7 @@
      <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="sala">
@@ -600,7 +603,7 @@
      <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="medicamento">
@@ -623,7 +626,7 @@
      <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="medico">
@@ -646,7 +649,7 @@
      <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="regresar">

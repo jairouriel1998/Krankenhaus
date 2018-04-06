@@ -51,7 +51,8 @@ SOURCES       = ../Krankenhaus/main.cpp \
 		../Krankenhaus/controller.cpp \
 		../Krankenhaus/empleado.cpp \
 		../Krankenhaus/salas.cpp \
-		../Krankenhaus/farmacia.cpp moc_krankenhaus.cpp \
+		../Krankenhaus/farmacia.cpp \
+		../Krankenhaus/pacientes.cpp moc_krankenhaus.cpp \
 		moc_people.cpp \
 		moc_empleado.cpp \
 		moc_salas.cpp \
@@ -63,6 +64,7 @@ OBJECTS       = main.o \
 		empleado.o \
 		salas.o \
 		farmacia.o \
+		pacientes.o \
 		moc_krankenhaus.o \
 		moc_people.o \
 		moc_empleado.o \
@@ -299,7 +301,7 @@ qmake_all: FORCE
 
 dist: 
 	@test -d .tmp/Krankenhaus1.0.0 || mkdir -p .tmp/Krankenhaus1.0.0
-	$(COPY_FILE) --parents $(SOURCES) $(DIST) .tmp/Krankenhaus1.0.0/ && $(COPY_FILE) --parents ../Krankenhaus/krankenhaus.h ../Krankenhaus/Clases/Administrativos.h ../Krankenhaus/Clases/Capsula.h ../Krankenhaus/Clases/Empleados.h ../Krankenhaus/Clases/Enfermeras.h ../Krankenhaus/Clases/Farmacia.h ../Krankenhaus/Clases/Hospital.h ../Krankenhaus/Clases/inyectable.h ../Krankenhaus/Clases/Jarabe.h ../Krankenhaus/Clases/Laboratorio.h ../Krankenhaus/Clases/Maternidad.h ../Krankenhaus/Clases/Medico.h ../Krankenhaus/Clases/Morgue.h ../Krankenhaus/Clases/Pacientes.h ../Krankenhaus/Clases/Pediatria.h ../Krankenhaus/Clases/Personas.h ../Krankenhaus/Clases/Psiquiatria.h ../Krankenhaus/Clases/Quirofano.h ../Krankenhaus/Clases/RayosX.h ../Krankenhaus/Clases/Salas.h ../Krankenhaus/Clases/ServiciosGenerales.h ../Krankenhaus/people.h ../Krankenhaus/controller.h ../Krankenhaus/empleado.h ../Krankenhaus/salas.h ../Krankenhaus/farmacia.h .tmp/Krankenhaus1.0.0/ && $(COPY_FILE) --parents ../Krankenhaus/main.cpp ../Krankenhaus/krankenhaus.cpp ../Krankenhaus/people.cpp ../Krankenhaus/controller.cpp ../Krankenhaus/empleado.cpp ../Krankenhaus/salas.cpp ../Krankenhaus/farmacia.cpp .tmp/Krankenhaus1.0.0/ && $(COPY_FILE) --parents ../Krankenhaus/krankenhaus.ui ../Krankenhaus/people.ui ../Krankenhaus/empleado.ui ../Krankenhaus/salas.ui ../Krankenhaus/farmacia.ui .tmp/Krankenhaus1.0.0/ && (cd `dirname .tmp/Krankenhaus1.0.0` && $(TAR) Krankenhaus1.0.0.tar Krankenhaus1.0.0 && $(COMPRESS) Krankenhaus1.0.0.tar) && $(MOVE) `dirname .tmp/Krankenhaus1.0.0`/Krankenhaus1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/Krankenhaus1.0.0
+	$(COPY_FILE) --parents $(SOURCES) $(DIST) .tmp/Krankenhaus1.0.0/ && $(COPY_FILE) --parents ../Krankenhaus/krankenhaus.h ../Krankenhaus/Clases/Administrativos.h ../Krankenhaus/Clases/Capsula.h ../Krankenhaus/Clases/Empleados.h ../Krankenhaus/Clases/Enfermeras.h ../Krankenhaus/Clases/Farmacia.h ../Krankenhaus/Clases/Hospital.h ../Krankenhaus/Clases/inyectable.h ../Krankenhaus/Clases/Jarabe.h ../Krankenhaus/Clases/Laboratorio.h ../Krankenhaus/Clases/Maternidad.h ../Krankenhaus/Clases/Medico.h ../Krankenhaus/Clases/Morgue.h ../Krankenhaus/Clases/Pacientes.h ../Krankenhaus/Clases/Pediatria.h ../Krankenhaus/Clases/Personas.h ../Krankenhaus/Clases/Psiquiatria.h ../Krankenhaus/Clases/Quirofano.h ../Krankenhaus/Clases/RayosX.h ../Krankenhaus/Clases/Salas.h ../Krankenhaus/Clases/ServiciosGenerales.h ../Krankenhaus/people.h ../Krankenhaus/controller.h ../Krankenhaus/empleado.h ../Krankenhaus/salas.h ../Krankenhaus/farmacia.h ../Krankenhaus/pacientes.h .tmp/Krankenhaus1.0.0/ && $(COPY_FILE) --parents ../Krankenhaus/main.cpp ../Krankenhaus/krankenhaus.cpp ../Krankenhaus/people.cpp ../Krankenhaus/controller.cpp ../Krankenhaus/empleado.cpp ../Krankenhaus/salas.cpp ../Krankenhaus/farmacia.cpp ../Krankenhaus/pacientes.cpp .tmp/Krankenhaus1.0.0/ && $(COPY_FILE) --parents ../Krankenhaus/krankenhaus.ui ../Krankenhaus/people.ui ../Krankenhaus/empleado.ui ../Krankenhaus/salas.ui ../Krankenhaus/farmacia.ui .tmp/Krankenhaus1.0.0/ && (cd `dirname .tmp/Krankenhaus1.0.0` && $(TAR) Krankenhaus1.0.0.tar Krankenhaus1.0.0 && $(COMPRESS) Krankenhaus1.0.0.tar) && $(MOVE) `dirname .tmp/Krankenhaus1.0.0`/Krankenhaus1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/Krankenhaus1.0.0
 
 
 clean:compiler_clean 
@@ -547,6 +549,10 @@ moc_people.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtCore/qfiledevice.h \
 		/usr/include/qt5/QtGui/qvector2d.h \
 		/usr/include/qt5/QtGui/qtouchdevice.h \
+		../Krankenhaus/pacientes.h \
+		/usr/include/qt5/QtCore/QString \
+		../Krankenhaus/controller.h \
+		/usr/include/qt5/QtCore/QList \
 		../Krankenhaus/people.h
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) $(INCPATH) -I/usr/include/c++/4.8 -I/usr/include/x86_64-linux-gnu/c++/4.8 -I/usr/include/c++/4.8/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../Krankenhaus/people.h -o moc_people.cpp
 
@@ -1184,6 +1190,10 @@ krankenhaus.o: ../Krankenhaus/krankenhaus.cpp ../Krankenhaus/krankenhaus.h \
 		/usr/include/qt5/QtWidgets/qabstractbutton.h \
 		/usr/include/qt5/QtWidgets/QWidget \
 		../Krankenhaus/people.h \
+		../Krankenhaus/pacientes.h \
+		/usr/include/qt5/QtCore/QString \
+		../Krankenhaus/controller.h \
+		/usr/include/qt5/QtCore/QList \
 		ui_people.h \
 		/usr/include/qt5/QtWidgets/QFrame \
 		/usr/include/qt5/QtWidgets/QLineEdit \
@@ -1303,6 +1313,10 @@ people.o: ../Krankenhaus/people.cpp ../Krankenhaus/people.h \
 		/usr/include/qt5/QtCore/qfiledevice.h \
 		/usr/include/qt5/QtGui/qvector2d.h \
 		/usr/include/qt5/QtGui/qtouchdevice.h \
+		../Krankenhaus/pacientes.h \
+		/usr/include/qt5/QtCore/QString \
+		../Krankenhaus/controller.h \
+		/usr/include/qt5/QtCore/QList \
 		ui_people.h \
 		/usr/include/qt5/QtCore/QVariant \
 		/usr/include/qt5/QtWidgets/QAction \
@@ -1403,9 +1417,7 @@ controller.o: ../Krankenhaus/controller.cpp ../Krankenhaus/controller.h \
 		/usr/include/qt5/QtCore/qnamespace.h \
 		/usr/include/qt5/QtCore/qarraydata.h \
 		/usr/include/qt5/QtCore/qstringbuilder.h \
-		../Krankenhaus/Clases/Pacientes.h \
-		../Krankenhaus/Clases/Personas.h \
-		../Krankenhaus/Clases/Hospital.h
+		../Krankenhaus/pacientes.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o controller.o ../Krankenhaus/controller.cpp
 
 empleado.o: ../Krankenhaus/empleado.cpp ../Krankenhaus/empleado.h \
@@ -1517,7 +1529,51 @@ empleado.o: ../Krankenhaus/empleado.cpp ../Krankenhaus/empleado.h \
 		/usr/include/qt5/QtCore/qfiledevice.h \
 		/usr/include/qt5/QtGui/qvector2d.h \
 		/usr/include/qt5/QtGui/qtouchdevice.h \
-		ui_empleado.h
+		ui_empleado.h \
+		/usr/include/qt5/QtCore/QVariant \
+		/usr/include/qt5/QtWidgets/QAction \
+		/usr/include/qt5/QtWidgets/qaction.h \
+		/usr/include/qt5/QtGui/qicon.h \
+		/usr/include/qt5/QtWidgets/qactiongroup.h \
+		/usr/include/qt5/QtWidgets/QApplication \
+		/usr/include/qt5/QtWidgets/qapplication.h \
+		/usr/include/qt5/QtCore/qcoreapplication.h \
+		/usr/include/qt5/QtCore/qeventloop.h \
+		/usr/include/qt5/QtWidgets/qdesktopwidget.h \
+		/usr/include/qt5/QtGui/qguiapplication.h \
+		/usr/include/qt5/QtGui/qinputmethod.h \
+		/usr/include/qt5/QtWidgets/QButtonGroup \
+		/usr/include/qt5/QtWidgets/qbuttongroup.h \
+		/usr/include/qt5/QtWidgets/QFrame \
+		/usr/include/qt5/QtWidgets/qframe.h \
+		/usr/include/qt5/QtWidgets/QHeaderView \
+		/usr/include/qt5/QtWidgets/qheaderview.h \
+		/usr/include/qt5/QtWidgets/qabstractitemview.h \
+		/usr/include/qt5/QtWidgets/qabstractscrollarea.h \
+		/usr/include/qt5/QtCore/qabstractitemmodel.h \
+		/usr/include/qt5/QtCore/qitemselectionmodel.h \
+		/usr/include/qt5/QtWidgets/qabstractitemdelegate.h \
+		/usr/include/qt5/QtWidgets/qstyleoption.h \
+		/usr/include/qt5/QtWidgets/qabstractspinbox.h \
+		/usr/include/qt5/QtGui/qvalidator.h \
+		/usr/include/qt5/QtCore/qregularexpression.h \
+		/usr/include/qt5/QtWidgets/qslider.h \
+		/usr/include/qt5/QtWidgets/qabstractslider.h \
+		/usr/include/qt5/QtWidgets/qstyle.h \
+		/usr/include/qt5/QtWidgets/qtabbar.h \
+		/usr/include/qt5/QtWidgets/qtabwidget.h \
+		/usr/include/qt5/QtWidgets/qrubberband.h \
+		/usr/include/qt5/QtWidgets/QLabel \
+		/usr/include/qt5/QtWidgets/qlabel.h \
+		/usr/include/qt5/QtWidgets/QLineEdit \
+		/usr/include/qt5/QtWidgets/qlineedit.h \
+		/usr/include/qt5/QtGui/qtextcursor.h \
+		/usr/include/qt5/QtGui/qtextformat.h \
+		/usr/include/qt5/QtGui/qpen.h \
+		/usr/include/qt5/QtGui/qtextoption.h \
+		/usr/include/qt5/QtWidgets/QPushButton \
+		/usr/include/qt5/QtWidgets/qpushbutton.h \
+		/usr/include/qt5/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o empleado.o ../Krankenhaus/empleado.cpp
 
 salas.o: ../Krankenhaus/salas.cpp ../Krankenhaus/salas.h \
@@ -1629,7 +1685,51 @@ salas.o: ../Krankenhaus/salas.cpp ../Krankenhaus/salas.h \
 		/usr/include/qt5/QtCore/qfiledevice.h \
 		/usr/include/qt5/QtGui/qvector2d.h \
 		/usr/include/qt5/QtGui/qtouchdevice.h \
-		ui_salas.h
+		ui_salas.h \
+		/usr/include/qt5/QtCore/QVariant \
+		/usr/include/qt5/QtWidgets/QAction \
+		/usr/include/qt5/QtWidgets/qaction.h \
+		/usr/include/qt5/QtGui/qicon.h \
+		/usr/include/qt5/QtWidgets/qactiongroup.h \
+		/usr/include/qt5/QtWidgets/QApplication \
+		/usr/include/qt5/QtWidgets/qapplication.h \
+		/usr/include/qt5/QtCore/qcoreapplication.h \
+		/usr/include/qt5/QtCore/qeventloop.h \
+		/usr/include/qt5/QtWidgets/qdesktopwidget.h \
+		/usr/include/qt5/QtGui/qguiapplication.h \
+		/usr/include/qt5/QtGui/qinputmethod.h \
+		/usr/include/qt5/QtWidgets/QButtonGroup \
+		/usr/include/qt5/QtWidgets/qbuttongroup.h \
+		/usr/include/qt5/QtWidgets/QFrame \
+		/usr/include/qt5/QtWidgets/qframe.h \
+		/usr/include/qt5/QtWidgets/QHeaderView \
+		/usr/include/qt5/QtWidgets/qheaderview.h \
+		/usr/include/qt5/QtWidgets/qabstractitemview.h \
+		/usr/include/qt5/QtWidgets/qabstractscrollarea.h \
+		/usr/include/qt5/QtCore/qabstractitemmodel.h \
+		/usr/include/qt5/QtCore/qitemselectionmodel.h \
+		/usr/include/qt5/QtWidgets/qabstractitemdelegate.h \
+		/usr/include/qt5/QtWidgets/qstyleoption.h \
+		/usr/include/qt5/QtWidgets/qabstractspinbox.h \
+		/usr/include/qt5/QtGui/qvalidator.h \
+		/usr/include/qt5/QtCore/qregularexpression.h \
+		/usr/include/qt5/QtWidgets/qslider.h \
+		/usr/include/qt5/QtWidgets/qabstractslider.h \
+		/usr/include/qt5/QtWidgets/qstyle.h \
+		/usr/include/qt5/QtWidgets/qtabbar.h \
+		/usr/include/qt5/QtWidgets/qtabwidget.h \
+		/usr/include/qt5/QtWidgets/qrubberband.h \
+		/usr/include/qt5/QtWidgets/QLabel \
+		/usr/include/qt5/QtWidgets/qlabel.h \
+		/usr/include/qt5/QtWidgets/QLineEdit \
+		/usr/include/qt5/QtWidgets/qlineedit.h \
+		/usr/include/qt5/QtGui/qtextcursor.h \
+		/usr/include/qt5/QtGui/qtextformat.h \
+		/usr/include/qt5/QtGui/qpen.h \
+		/usr/include/qt5/QtGui/qtextoption.h \
+		/usr/include/qt5/QtWidgets/QPushButton \
+		/usr/include/qt5/QtWidgets/qpushbutton.h \
+		/usr/include/qt5/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o salas.o ../Krankenhaus/salas.cpp
 
 farmacia.o: ../Krankenhaus/farmacia.cpp ../Krankenhaus/farmacia.h \
@@ -1741,8 +1841,99 @@ farmacia.o: ../Krankenhaus/farmacia.cpp ../Krankenhaus/farmacia.h \
 		/usr/include/qt5/QtCore/qfiledevice.h \
 		/usr/include/qt5/QtGui/qvector2d.h \
 		/usr/include/qt5/QtGui/qtouchdevice.h \
-		ui_farmacia.h
+		ui_farmacia.h \
+		/usr/include/qt5/QtCore/QVariant \
+		/usr/include/qt5/QtWidgets/QAction \
+		/usr/include/qt5/QtWidgets/qaction.h \
+		/usr/include/qt5/QtGui/qicon.h \
+		/usr/include/qt5/QtWidgets/qactiongroup.h \
+		/usr/include/qt5/QtWidgets/QApplication \
+		/usr/include/qt5/QtWidgets/qapplication.h \
+		/usr/include/qt5/QtCore/qcoreapplication.h \
+		/usr/include/qt5/QtCore/qeventloop.h \
+		/usr/include/qt5/QtWidgets/qdesktopwidget.h \
+		/usr/include/qt5/QtGui/qguiapplication.h \
+		/usr/include/qt5/QtGui/qinputmethod.h \
+		/usr/include/qt5/QtWidgets/QButtonGroup \
+		/usr/include/qt5/QtWidgets/qbuttongroup.h \
+		/usr/include/qt5/QtWidgets/QFrame \
+		/usr/include/qt5/QtWidgets/qframe.h \
+		/usr/include/qt5/QtWidgets/QHeaderView \
+		/usr/include/qt5/QtWidgets/qheaderview.h \
+		/usr/include/qt5/QtWidgets/qabstractitemview.h \
+		/usr/include/qt5/QtWidgets/qabstractscrollarea.h \
+		/usr/include/qt5/QtCore/qabstractitemmodel.h \
+		/usr/include/qt5/QtCore/qitemselectionmodel.h \
+		/usr/include/qt5/QtWidgets/qabstractitemdelegate.h \
+		/usr/include/qt5/QtWidgets/qstyleoption.h \
+		/usr/include/qt5/QtWidgets/qabstractspinbox.h \
+		/usr/include/qt5/QtGui/qvalidator.h \
+		/usr/include/qt5/QtCore/qregularexpression.h \
+		/usr/include/qt5/QtWidgets/qslider.h \
+		/usr/include/qt5/QtWidgets/qabstractslider.h \
+		/usr/include/qt5/QtWidgets/qstyle.h \
+		/usr/include/qt5/QtWidgets/qtabbar.h \
+		/usr/include/qt5/QtWidgets/qtabwidget.h \
+		/usr/include/qt5/QtWidgets/qrubberband.h \
+		/usr/include/qt5/QtWidgets/QLabel \
+		/usr/include/qt5/QtWidgets/qlabel.h \
+		/usr/include/qt5/QtWidgets/QLineEdit \
+		/usr/include/qt5/QtWidgets/qlineedit.h \
+		/usr/include/qt5/QtGui/qtextcursor.h \
+		/usr/include/qt5/QtGui/qtextformat.h \
+		/usr/include/qt5/QtGui/qpen.h \
+		/usr/include/qt5/QtGui/qtextoption.h \
+		/usr/include/qt5/QtWidgets/QPushButton \
+		/usr/include/qt5/QtWidgets/qpushbutton.h \
+		/usr/include/qt5/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o farmacia.o ../Krankenhaus/farmacia.cpp
+
+pacientes.o: ../Krankenhaus/pacientes.cpp ../Krankenhaus/pacientes.h \
+		/usr/include/qt5/QtCore/QString \
+		/usr/include/qt5/QtCore/qstring.h \
+		/usr/include/qt5/QtCore/qchar.h \
+		/usr/include/qt5/QtCore/qglobal.h \
+		/usr/include/qt5/QtCore/qconfig.h \
+		/usr/include/qt5/QtCore/qfeatures.h \
+		/usr/include/qt5/QtCore/qsystemdetection.h \
+		/usr/include/qt5/QtCore/qprocessordetection.h \
+		/usr/include/qt5/QtCore/qcompilerdetection.h \
+		/usr/include/qt5/QtCore/qglobalstatic.h \
+		/usr/include/qt5/QtCore/qatomic.h \
+		/usr/include/qt5/QtCore/qbasicatomic.h \
+		/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		/usr/include/qt5/QtCore/qgenericatomic.h \
+		/usr/include/qt5/QtCore/qatomic_msvc.h \
+		/usr/include/qt5/QtCore/qatomic_integrity.h \
+		/usr/include/qt5/QtCore/qoldbasicatomic.h \
+		/usr/include/qt5/QtCore/qatomic_vxworks.h \
+		/usr/include/qt5/QtCore/qatomic_power.h \
+		/usr/include/qt5/QtCore/qatomic_alpha.h \
+		/usr/include/qt5/QtCore/qatomic_armv7.h \
+		/usr/include/qt5/QtCore/qatomic_armv6.h \
+		/usr/include/qt5/QtCore/qatomic_armv5.h \
+		/usr/include/qt5/QtCore/qatomic_bfin.h \
+		/usr/include/qt5/QtCore/qatomic_ia64.h \
+		/usr/include/qt5/QtCore/qatomic_mips.h \
+		/usr/include/qt5/QtCore/qatomic_s390.h \
+		/usr/include/qt5/QtCore/qatomic_sh4a.h \
+		/usr/include/qt5/QtCore/qatomic_sparc.h \
+		/usr/include/qt5/QtCore/qatomic_gcc.h \
+		/usr/include/qt5/QtCore/qatomic_x86.h \
+		/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		/usr/include/qt5/QtCore/qatomic_unix.h \
+		/usr/include/qt5/QtCore/qmutex.h \
+		/usr/include/qt5/QtCore/qlogging.h \
+		/usr/include/qt5/QtCore/qflags.h \
+		/usr/include/qt5/QtCore/qtypeinfo.h \
+		/usr/include/qt5/QtCore/qtypetraits.h \
+		/usr/include/qt5/QtCore/qsysinfo.h \
+		/usr/include/qt5/QtCore/qbytearray.h \
+		/usr/include/qt5/QtCore/qrefcount.h \
+		/usr/include/qt5/QtCore/qnamespace.h \
+		/usr/include/qt5/QtCore/qarraydata.h \
+		/usr/include/qt5/QtCore/qstringbuilder.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o pacientes.o ../Krankenhaus/pacientes.cpp
 
 moc_krankenhaus.o: moc_krankenhaus.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_krankenhaus.o moc_krankenhaus.cpp
